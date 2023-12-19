@@ -35,7 +35,7 @@ class BlogListPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
-                      child:Text(data?.title ?? 'null',
+                      child:Text('Title: ${data?.title}',
                         style: getTextStyle(
                             16, FontWeight.bold, AppColors.black),
                         maxLines: 2,
@@ -65,7 +65,7 @@ class BlogListPage extends StatelessWidget {
                 ),
                 Align(
                   alignment: Alignment.topLeft,
-                  child:Text('Sub title: ' + '',
+                  child:Text('Sub title: ${data?.subTitle}',
                     style: getTextStyle(
                         15, FontWeight.normal, AppColors.textLightColor),
                     maxLines: 1,
@@ -77,7 +77,7 @@ class BlogListPage extends StatelessWidget {
                 ),
                 Align(
                   alignment: Alignment.topLeft,
-                  child: Text('Date: ',
+                  child: Text('Date: ${data?.date}',
                     style: getTextStyle(
                         15, FontWeight.normal, AppColors.splashText),
                     maxLines: 1,
@@ -89,7 +89,7 @@ class BlogListPage extends StatelessWidget {
                 ),
                 Align(
                   alignment: Alignment.topLeft,
-                  child: Text('Description ' + '',
+                  child: Text('Description: ${data?.description}',
                     style: getTextStyle(
                         15, FontWeight.normal, AppColors.splashText),
                     maxLines: 1,
@@ -116,7 +116,7 @@ class BlogListPage extends StatelessWidget {
                       ),
                       onPressed: () {
                       },
-                      child: Text('Category ID: ' + '  ',
+                      child: Text('Category ID: ${data?.categoryId}',
                         style: getTextStyle(
                             15, FontWeight.normal, AppColors.splashText),
                         maxLines: 1,

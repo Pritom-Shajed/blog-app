@@ -8,6 +8,5 @@ class BlogListState extends BaseState {
     ///Initialize variables
   }
   var blogListResponse = Rxn<BlogListResponse>();
-  // var blogData = Rx<List<Blogs>>([]);
   ScrollController scrollController = ScrollController();
 }

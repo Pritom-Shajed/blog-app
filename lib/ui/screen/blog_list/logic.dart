@@ -48,7 +48,6 @@ class BlogListLogic extends BaseController {
 
         state.blogListResponse.value = resp;
 
-        update();
       }else{
 
       }

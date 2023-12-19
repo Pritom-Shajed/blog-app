@@ -40,7 +40,6 @@ class AllRepository extends BaseRepository{
   static Future<BlogListResponse> blogList() async{
     PreferenceUtils.init();
     final response = await _helper.get(ServerAddresses.blogList,token:'Bearer');
-
     return BlogListResponse.fromJson(response);
   }
 
